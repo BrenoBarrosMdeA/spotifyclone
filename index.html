@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Imersão</title>
 
+    <!-- Variaveis CSS-->
+    <link rel="stylesheet" href="SRC/styles/vars.css">
 
     <!--Reset CSS--> <!--DEVE SER COLOCADO NO INICIO PARA QUE AS PRÓXIMAS APLICAÇÕES SEJAM ACRECENTADAS-->
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="SRC/styles/reset.css">
 
-    <!--Folhas de Estilo-->
-    <link rel="stylesheet" href="styles.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="SRC/styles/sidebar-footer.css">
+
+    <link rel="stylesheet" href="./SRC/styles/main-content.css">
 
     <!--CDN de icones-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
@@ -21,12 +25,14 @@
 
  </head>
 <body>
+
+    <!--SIDEBAR-->
     <div class="sidebar">
         <nav class="sidebar-navigation"> <!--## A TAG NAV É INDICADA PARA CRIAR MENUS-->
             
                 <div class="logo">
                     <a href="">
-                        <img src="./assets/icons-20250127T152033Z-001/icons/logo-spotify.png" alt="Logo do Spotify">
+                        <img src="./SRC/assets/icons-20250127T152033Z-001/icons/logo-spotify.png" alt="Logo do Spotify">
                     </a>
                 </div>
                 
@@ -76,8 +82,49 @@
                 </button>
             </div>
         </div>
-
-
     </div>
+    <!--##########-->
+
+    <!--MAIN-->
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./SRC/assets/icons-20250127T152033Z-001/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./SRC/assets/icons-20250127T152033Z-001/icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+                <div class="header__search">
+                    <img src="./src/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+                </div>
+                <div class="header__login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+        </div>
+    </main>
+
+    </body>
+    <!--##########-->
+
+    <!--FOOTER-->
+    <footer class="disclaimer-premium">
+        <div class="text">
+            <p class="disclaimer-premium__title">Testar o Premium de graça</p>
+            <p class="disclaimer-premium__subtitle">
+                Inscreva-se para curtir música ilimitada e podcasts só com alguns
+                anúncios. Não precisa de cartão de crédito.
+            </p>
+        </div>
+        <div class="button">
+            <button type="button">Inscreva-se grátis</button>
+        </div>
+    </footer>
+    <!--##########-->
 </body>
 </html>
